@@ -77,3 +77,14 @@ In my example video, that page is the "machinelearning.md" file.
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
+
+
+Paste the code below at the end of the "scripts.html" file located in the _includes folder.
+This will allow the MathJax to correctly render equations on your site.
+
+
+{% if page.mathjax %}
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
