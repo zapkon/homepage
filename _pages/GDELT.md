@@ -12,12 +12,12 @@ In my example video, that page is the "machinelearning.md" file.
 
 
 {% include base_path %}
-{% include group-by-array collection=site.posts_gdelt field="tags" %}
+{% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
-  {% assign posts_gdelt = group_items[forloop.index0] %}
+  {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts_gdelt %}
+  {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
