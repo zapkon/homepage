@@ -13,8 +13,8 @@ defaults:
 
 # SEO
 # https://github.com/jekyll/jekyll-seo-tag
-title: Friends Of REDAXO
-description: Dies ist der Ort für gemeinsame REDAXO-Entwicklung. Alles, was hier entwickelt wird, ist Teil der Community und damit Gemeingut.
+title: Friends Of gg
+description: LOLOL
 logo: https://raw.githubusercontent.com/FriendsOfREDAXO/friendsofredaxo.github.io/assets/trex_550x550.png
 twitter:
   username: redaxo
@@ -22,4 +22,4 @@ social:
   name: Friends Of REDAXO
   links:
     - https://github.com/FriendsOfREDAXO
-    - https://twitter.com/redaxo
+    - https://www.linkedin.com/feed/
