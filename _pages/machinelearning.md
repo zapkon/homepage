@@ -1,6 +1,6 @@
 ---
 layout: posts
-permalink: /ML M/
+permalink: /data-wrangling/
 title: "Machine Learning"
 author_profile: true
 header:
