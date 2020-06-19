@@ -1,5 +1,5 @@
 ---
-layout: postsALL
+layout: posts
 permalink: /GDELT/
 title: "GDELT"
 author_profile: true
