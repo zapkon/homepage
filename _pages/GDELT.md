@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: posts_gdelt
 permalink: /GDELT/
 title: "GDELT Projects"
 author_profile: true
@@ -12,12 +12,12 @@ In my example video, that page is the "machinelearning.md" file.
 
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="tags" %}
+{% include group-by-array collection=site.posts_gdelt field="tags" %}
 
 {% for tag in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
+  {% assign posts_gdelt = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts %}
+  {% for post in posts_gdelt %}
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}

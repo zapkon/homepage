@@ -6,8 +6,6 @@ main:
     url: /data-wrangling/
   - title: "GDELT"
     url: /GDELT/
-  - title: "Sitemap"
-    url: /sitemap/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
