@@ -2,10 +2,13 @@
 main:
   - title: "About"
     url: /about/
+
   - title: "Machine Learning"
     url: /data-wrangling/
+
   - title: "GDELT"
     url: /GDELT/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
