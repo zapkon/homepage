@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Data Science Projects"
 title_separator          : "-"
 name                     : "Konstanttin Zapolski "
-description              : "Data Science Projects"
+description              : "Short Data Stories concerning People, Economics and Media"
 url                      : # the base hostname & protocol for your site e.g. "https://konzap.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Konstantin Zapolski"
   avatar           : "/images/bio-pic-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Graduate in Business Economics of WU Vienna and Tilburg University"
+  bio              : "Graduate in Business Economics of WU Vienna"
   location         : "Vienna"
   email            : "kon.zap@web.de"
   uri              :
