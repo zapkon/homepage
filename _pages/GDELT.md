@@ -1,5 +1,5 @@
 ---
-layout: posts_gdelt
+layout: posts
 permalink: /GDELT/
 title: "GDELT Projects"
 author_profile: true
