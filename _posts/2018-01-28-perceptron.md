@@ -64,11 +64,6 @@ You can also put it inline $$z=x+y$$
 
 
 
-
-Paste the code below at the end of the "scripts.html" file located in the _includes folder.
-This will allow the MathJax to correctly render equations on your site.
-
-
 {% if page.mathjax %}
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
