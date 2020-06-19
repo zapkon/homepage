@@ -1,32 +1,25 @@
-# --- Basic options --- #
+theme: minima
+repository: FriendsOfREDAXO/friendsofredaxo.github.io 
+plugins: ['jekyll-github-metadata', 'jekyll-seo-tag']
+timezone: Europe/Berlin
 
-# Name of website
-title: My website
+# defaults
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://raw.githubusercontent.com/FriendsOfREDAXO/friendsofredaxo.github.io/assets/trex_1200x600.png
 
-# Short description of your site
-description: A virtual proof that I'm awesome
-
-# Your name to show in the footer
-author: Some Person
-
-# --- List of links in the navigation bar --- #
-
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
-# --- Logo --- #
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-#title-img: /path/to/image
+# SEO
+# https://github.com/jekyll/jekyll-seo-tag
+title: Friends Of REDAXO
+description: Dies ist der Ort für gemeinsame REDAXO-Entwicklung. Alles, was hier entwickelt wird, ist Teil der Community und damit Gemeingut.
+logo: https://raw.githubusercontent.com/FriendsOfREDAXO/friendsofredaxo.github.io/assets/trex_550x550.png
+twitter:
+  username: redaxo
+social:
+  name: Friends Of REDAXO
+  links:
+    - https://github.com/FriendsOfREDAXO
+    - https://twitter.com/redaxo
