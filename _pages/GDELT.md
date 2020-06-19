@@ -1,6 +1,6 @@
 ---
 layout: postsALL
-permalink: /data-wrangling/
+permalink: /GDELT/
 title: "GDELT"
 author_profile: true
 header:
