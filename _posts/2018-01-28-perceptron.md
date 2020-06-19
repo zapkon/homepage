@@ -65,7 +65,6 @@ You can also put it inline $$z=x+y$$
 
 
 
-
 Paste the code below at the end of the "scripts.html" file located in the _includes folder.
 This will allow the MathJax to correctly render equations on your site.
 
@@ -75,19 +74,3 @@ This will allow the MathJax to correctly render equations on your site.
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 {% endif %}
-
-
-########################################################################################
-copy the code below and put it on the page where your projects will all be listed.
-In my example video, that page is the "machinelearning.md" file.
-
-{% include base_path %}
-{% include group-by-array collection=site.posts field="tags" %}
-
-{% for tag in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endfor %}
