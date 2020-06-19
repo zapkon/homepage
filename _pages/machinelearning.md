@@ -1,12 +1,11 @@
 ---
 layout: posts
-permalink: /data-wrangling/
-title: "Data Wrangling projects"
+permalink: /ML M/
+title: "Machine Learning"
 author_profile: true
 header:
   image: "/images/fort point.png"
 ---
-
 
 copy the code below and put it on the page where your projects will all be listed.
 In my example video, that page is the "machinelearning.md" file.

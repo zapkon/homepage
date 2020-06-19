@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: postsALL
 permalink: /data-wrangling/
 title: "GDELT"
 author_profile: true
