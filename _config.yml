@@ -1,5 +1,5 @@
 theme: minima
-repository: FriendsOfREDAXO/friendsofredaxo.github.io 
+repository: zapkon/homepage.github.io  
 plugins: ['jekyll-github-metadata', 'jekyll-seo-tag']
 timezone: Europe/Berlin
 
@@ -13,13 +13,16 @@ defaults:
 
 # SEO
 # https://github.com/jekyll/jekyll-seo-tag
-title: Friends Of gg
-description: LOLOL
-logo: https://raw.githubusercontent.com/FriendsOfREDAXO/friendsofredaxo.github.io/assets/trex_550x550.png
+title: Project of Konstantin Zapolski
+description: Some projects
+logo: https://www.bild.de/news/ausland/news-ausland/van-gogh-aus-museum-geklaut-fotos-aufgetaucht-71373298.bild.html
 twitter:
   username: redaxo
+  
+linkedin: 
+  username: zapp
 social:
   name: Friends Of REDAXO
   links:
-    - https://github.com/FriendsOfREDAXO
-    - https://www.linkedin.com/feed/
+    - https://www.linkedin.com/feed
+    - https://www.linkedin.com/feed
