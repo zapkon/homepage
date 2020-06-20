@@ -9,6 +9,9 @@ main:
   - title: "GDELT"
     url: /GDELT/
 
+  - title: "Spotify"
+        url: /Spotify Track Meta Data/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
