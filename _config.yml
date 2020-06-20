@@ -87,7 +87,7 @@ author:
   name             : "Konstantin Zapolski"
   avatar           : "/images/Zapp2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Graduate in Business Economics from WU Vienna"
-  location         : "Vienna"
+  location         : "Vienna, Austria"
   email            : "kon.zap@web.de"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
