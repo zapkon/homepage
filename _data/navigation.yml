@@ -3,8 +3,8 @@ main:
   - title: "About"
     url: /about/
 
-  - title: "Machine Learning"
-    url: /data-wrangling/
+  - title: "All Projects"
+    url: /projects-list/
 
   - title: "GDELT"
     url: /GDELT/
