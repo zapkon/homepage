@@ -1,7 +1,7 @@
 ---
 layout: posts
-permalink: /data-wrangling/
-title: "Machine Learning"
+permalink: /Spotify/
+title: "Spotify Songs Meta Data Analysis"
 author_profile: true
 header:
   image: "/images/fort point.png"
