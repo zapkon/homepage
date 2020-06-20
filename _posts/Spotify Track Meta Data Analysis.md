@@ -1,7 +1,7 @@
 ---
 title: "Spotify Track Meta Data Analysis"
 date: 2018-01-28
-tags: [data wrangling, data science, messy data]
+tags: [Keyword 11]
 header:
   image: "/images/perceptron/percept.jpg"
 excerpt: "Spotify, Music Tracks Characteristics, Linguistics"
