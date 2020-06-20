@@ -10,7 +10,7 @@ main:
     url: /GDELT/
 
   - title: "Spotify"
-    url: /Spotify Track Meta Data/
+    url: /Spotify/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
