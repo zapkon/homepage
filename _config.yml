@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Konstantin Zapolski"
-  avatar           : "/images/Zapp2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Zapp3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Graduate in Business Economics from WU Vienna"
   location         : "Vienna, Austria"
   email            : "kon.zap@web.de"
