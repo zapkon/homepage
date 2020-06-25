@@ -20,7 +20,7 @@ In the Q1 the accusations and tension led to a double-peak of the volume of news
  ![alt]({{ site.url }}{{ site.baseurl }}/images/\GDELT - Chimerika\plots_created\GDELT CYN_USD.png)
 Here we see a weak negative relationship between the volume quantity of news and the strength of the USD relatively to the CYN.
 
-For getting the data [S&P 500 Inflation Adjusted by Month](https://www.quandl.com/data/MULTPL/SP500_INFLADJ_MONTH-S-P-500-Inflation-Adjusted-by-Month) and [Foreign Exchange Rate](https://www.quandl.com/data/SNB/DEVKUM-Foreign-Exchange-Rates)   I´ve used the .R API and recieved a key after quickly signing up for free [Quandl](https://www.quandl.com/).
+[Quandl](https://www.quandl.com/) was used for getting the data [S&P 500 Inflation Adjusted by Month](https://www.quandl.com/data/MULTPL/SP500_INFLADJ_MONTH-S-P-500-Inflation-Adjusted-by-Month) and [Foreign Exchange Rate](https://www.quandl.com/data/SNB/DEVKUM-Foreign-Exchange-Rates). First sign up for free, get your key, and connect via .R API key!
 
 ```r
 ##### Get SP500 and FX data from Quandl ########
