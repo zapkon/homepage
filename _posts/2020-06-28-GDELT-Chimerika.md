@@ -1,5 +1,5 @@
 ---
-title: "China and USA Relations: Global News, Stocks and Currency"
+title: "Chimerika - China and USA Relations & Global News, Stocks and Currency"
 date: 2020-06-28
 tags: [China, USA,  Currency, Global News Media]
 header:
