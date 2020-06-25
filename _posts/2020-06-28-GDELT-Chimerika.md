@@ -39,5 +39,5 @@ currency$CNY_per_USD = 1/currency$CNY_per_USD *100      # convert format for bet
 ```
 
 
-
+good plots -> information dense
 Happy Discovering!
