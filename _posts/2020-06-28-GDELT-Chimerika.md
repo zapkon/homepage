@@ -8,8 +8,8 @@ excerpt: "GDELT, News Media, Diplomacy"
 mathjax: "true"
 ---
 
-559 bn USD - official trade volume between China and USA in 2019, which accounts for ~5% of total global trade volume (~20,000 bn).
-Trade wars are reflected in the global media news and therefor I made this analysis.
+559 bn USD - official trade volume between China and USA in 2019, which accounts for ~5% of global trade volume (~20,000 bn).
+Trade wars are reflected in the global media news:
 
  ![alt]({{ site.url }}{{ site.baseurl }}/images/\GDELT - Chimerika\plots_created\GDELT_sp500.png)
 
