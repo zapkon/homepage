@@ -25,6 +25,8 @@ Here we see a weak negative relationship between the volume quantity of news and
 ```r
 ##### Get SP500 and FX data from Quandl ########
 # Get your API key from quandl.com
+library(Quandl)   
+
 quandl_api = "your_key"
 Quandl.api_key(quandl_api)     # Add the key to the Quandl keychain
 
