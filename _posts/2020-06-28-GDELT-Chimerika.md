@@ -3,7 +3,7 @@ title: "Chimerika - China and USA Relations & Global News, Stocks and Currency"
 date: 2020-06-28
 tags: [China, USA,  Currency, Global News Media]
 header:
-  image: "/imagesGDELT - Chimerika/Chimerika.jpg"
+  image: "/images/GDELT - Chimerika/Chimerika.jpg"
 excerpt: "GDELT, News Media, Diplomacy"
 mathjax: "true"
 ---
