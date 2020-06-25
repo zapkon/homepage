@@ -13,77 +13,31 @@ Trade wars are reflected in the global media news:
 
  ![alt]({{ site.url }}{{ site.baseurl }}/images/\GDELT - Chimerika\plots_created\GDELT_sp500.png)
 
-
-
+[GDELT](https://www.gdeltproject.org/) crawls news websites and systematically identifies and codifies entities and countries. Instruction getting data via .R API is described in my [previous post](https://zapkon.github.io/homepage/GDELT-Austria/.
+We see that GDELT news volume has always a low around the New Year's Eve. The impact of COVID-19 is also clearly visible here:
+In the Q1 the accusations and tension led to a double-peak of the volume of news. Also the S&P 500 dropped from it all time high.
 
  ![alt]({{ site.url }}{{ site.baseurl }}/images/\GDELT - Chimerika\plots_created\GDELT CYN_USD.png)
+Here we see a weak negative relationship between the volume quantity of news and the strength of the USD relatively to the CYN.
 
-
-
-
-
-al data frame give you more intuition about GDELT: ![alt]({{ site.url }}{{ site.baseurl }}/images/GDELT/data screenshot.jpg)
-
-GDELT has a great ability for modelling network dynamics with packages like [visNetwork](https://cran.rstudio.com/web/packages/visNetwork/vignettes/Introduction-to-visNetwork.html). Here I´ve created a simple plot representing the average sentiment (color) and frequency (size) of the events and the countries in relationship with Austria!
-![alt]({{ site.url }}{{ site.baseurl }}/images/GDELT/sna.png)
-PS: Austria has also a size and sentiment, which represents the interaction of two entities within Austria e.g. Actor1 = Austrian Government and Actor2 = Red Bull company!
-
-Overall GDELT is a powerful source, can be interpreted as a proxy, to study various aspects such as evolution or snapshot of international relationships and emerging topics.
-
-You can download all GDELT Event Files on daily level [here](http://data.gdeltproject.org/events/index.html). Respectively the [codebook](http://data.gdeltproject.org/documentation/GDELT-Event_Codebook-V2.0.pdf).
-
-The data was retrieved via API in .R and I know many people have problems with getting the data. Therefore I wrote a function to smoothly download data (~ 10 MB per day). A part of the GDELT project is also hosted on [Google BigQuery](https://console.cloud.google.com/bigquery?p=gdelt-bq&d=gdeltv2&page=dataset&project=gdelt-265500&folder=&organizationId=).
-You can customize the function´s input: start_date, end_date, steps and country_code to get the data.
-I´ve applied a filtering of 25 parameter and picked Austria data:
+For getting the data [S&P 500 Inflation Adjusted by Month](https://www.quandl.com/data/MULTPL/SP500_INFLADJ_MONTH-S-P-500-Inflation-Adjusted-by-Month) and [Foreign Exchange Rate](https://www.quandl.com/data/SNB/DEVKUM-Foreign-Exchange-Rates)   I´ve used the .R API and recieved a key after quickly signing up for free [Quandl](https://www.quandl.com/).
 
 ```r
-library(GDELTtools)
-library(data.table)
-library(dplyr)
-library(ggplot2)
+##### Get SP500 and FX data from Quandl ########
+# Get your API key from quandl.com
+quandl_api = "your_key"
+Quandl.api_key(quandl_api)     # Add the key to the Quandl keychain
 
-folder = "~/Documents/GDELT"
+# Quandl.search(query="market index", silent=FALSE)
 
-get_GDELT_data = function(  start = Sys.Date()-2 , end = Sys.Date()-1 , merger_steps = 5, country_code = "AUT") {
-  #browser()
+sp500 = Quandl("MULTPL/SP500_INFLADJ_MONTH", start_date = "2018-01-01", end_date = "2020-07-01")
 
-  start = as.Date(start)
-  end   = as.Date(end)
-
-  time_diff = as.numeric( difftime(end, start, units= "days") )
-  interval  = unique(  c( seq(0, time_diff,  merger_steps), time_diff) )
-
-  datalist  = list()
-  i2        = 0
-  count     = 1
-
-  for (i in interval  ) {
-
-    start_tmp = start +i2
-    end_tmp   = start +i
-
-    temp_data <- GetGDELT(start.date = start_tmp, end.date = end_tmp, local.folder = folder ) %>%
-      select(., SQLDATE,
-             Actor1Code, Actor1Name, Actor1CountryCode, Actor1Type1Code,
-             Actor2Code, Actor2Name, Actor2CountryCode, Actor2Type1Code,
-             IsRootEvent, EventCode, EventRootCode, GoldsteinScale,
-             NumMentions, NumSources, NumArticles, AvgTone, Actor1Geo_FullName, Actor2Geo_FullName,
-             Actor1Geo_CountryCode, Actor2Geo_CountryCode,
-             ActionGeo_FullName, ActionGeo_CountryCode, ActionGeo_Lat, ActionGeo_Long,
-             SOURCEURL) %>%
-      filter(Actor1CountryCode ==  country_code | Actor2CountryCode == country_code)
-
-    i2                = i+1
-    datalist[[count]] = temp_data
-    count             = count+1
-    Sys.sleep(20)
-  }
-
-  DF_gdelt = do.call(rbind, datalist)
-  return(DF_gdelt)
-}
-
-DF_austria = get_GDELT_data( "2020-01-01" , "2020-06-19", 10, country_code = "AUT")   # Apply the function!
+currency = Quandl("SNB/DEVKUM", start_date = "2017-01-01", end_date = "2020-07-01") # get all pairs
+currency = currency[,c(1,46)]                           # pick the pair CYN/USD
+colnames(currency)[2] = "CNY_per_USD"
+currency$CNY_per_USD = 1/currency$CNY_per_USD *100      # convert format for better interpretation
 ```
+
+
 
 Happy Discovering!
