@@ -15,7 +15,7 @@ Trade wars are reflected in the global media news:
 
 [GDELT](https://www.gdeltproject.org/) crawls news websites and systematically identifies and codifies entities and countries. Instruction getting data via .R API is described in my [previous post](https://zapkon.github.io/homepage/GDELT-Austria/).
 We see that GDELT news volume has always a low around the New Year's Eve. The impact of COVID-19 is also clearly visible here:
-In the Q1 the accusations and tension led to a double-peak of the volume of news. Also the S&P 500 dropped from it all time high.
+In the Q1 the accusations and tension led to a double-peak of the volume of news. Also the S&P 500 dropped from it´s all time high.
 
  ![alt]({{ site.url }}{{ site.baseurl }}/images/\GDELT - Chimerika\plots_created\GDELT CYN_USD.png)
 Here we see a weak negative relationship between the volume quantity of news and the strength of the USD relatively to the CYN.
