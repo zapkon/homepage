@@ -7,7 +7,7 @@ header:
 excerpt: "GDELT, News Media, Diplomacy"
 mathjax: "true"
 ---
-1111111111111111111111111111111143532535353535311Like Leviathan. The [GDELT Project](https://www.gdeltproject.org/) is the largest, most comprehensive, and highest resolution open database of human society ever created and stands for "Global Dataset on Events, Languages and Tone".
+Like Leviathan. The [GDELT Project](https://www.gdeltproject.org/) is the largest, most comprehensive, and highest resolution open database of human society ever created and stands for "Global Dataset on Events, Languages and Tone".
 
 This post [showcase](https://blog.gdeltproject.org/) what we can learn from GDELT about the country of Mozart, [Schnitzel](http://www.brigittenauerstadl.at/index.html) and Red Bull. Credits to [Viktor](https://twitter.com/martino_vic) for assistance!
 
